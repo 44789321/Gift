@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', cursive;
+    box-sizing: border-box; /* Asegura que padding y border se incluyan en el tamaño total */
+}
+
+body {
+    color: azure;
+    width: 100%;
+    height: 100vh; /* Cambiado a 100vh para ocupar toda la altura */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.botones {
+    padding: 9px;
+    border-radius: 80px;
+    background-color: transparent;
+    border: none;
+    width: 100%; /* Asegura que el botón ocupe todo el ancho disponible */
+}
+
+.container {
+    text-align: center;
+    background-color: black;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+:host {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente */
+    height: 100vh;           /* Ocupa toda la altura de la pantalla */
+    width: 100vw;            /* Ocupa todo el ancho de la pantalla */
+    margin: 0;
+    background-color: black; /* Color de fondo opcional */
+}
+
+.botones a {
+    background-color: #0a2be9;
+    padding: 9px;
+    border-radius: 80px;
+}
+
+.botones a:focus {
+    background-color: rgb(223, 38, 240);
+}
+
+.greetings {
+    font-size: 7rem;
+    font-weight: 900;
+}
+
+.greetings > span {
+    animation: glow 2.5s ease-in-out infinite;
+}
+
+@keyframes glow {
+    0%, 100% {
+        color: #fff;
+        text-shadow: 0 0 12px #e716d6, 0 0 50px #e233e2, 0 0 100px #dd1ef7;
+    }
+    10%, 90% {
+        color: #fff;
+        text-shadow: none;
+    }
+}
+
+.greetings > span:nth-child(2) {
+    animation-delay: .2s;
+}
+.greetings > span:nth-child(3) {
+    animation-delay: .4s;
+}
+.greetings > span:nth-child(4) {
+    animation-delay: .6s;
+}
+.greetings > span:nth-child(5) {
+    animation-delay: .8s;
+}
+.greetings > span:nth-child(6) {
+    animation-delay: 1s;
+}
+.greetings > span:nth-child(7) {
+    animation-delay: 1.2s;
+}
+.greetings > span:nth-child(8) {
+    animation-delay: 1.4s;
+}
+.greetings > span:nth-child(9) {
+    animation-delay: 1.6s;
+}
+.greetings > span:nth-child(10) {
+    animation-delay: 1.8s;
+}
+.greetings > span:nth-child(11) {
+    animation-delay: 2s;
+}
+.greetings > span:nth-child(12) {
+    animation-delay: 2.2s;
+}
+.greetings > span:nth-child(13) {
+    animation-delay: 2.4s;
+}
+.greetings > span:nth-child(14) {
+    animation-delay: 2.6s;
+}
+.greetings > span:nth-child(15) {
+    animation-delay: 2.8s;
+}
+.greetings > span:nth-child(16) {
+    animation-delay: 3s;
+}
+.greetings > span:nth-child(17) {
+    animation-delay: 3.2s;
+}
+.greetings > span:nth-child(18) {
+    animation-delay: 3.4s;
+}
+.greetings > span:nth-child(19) {
+    animation-delay: 3.6s;
+}
+.greetings > span:nth-child(20) {
+    animation-delay: 3.8s;
+}
+.greetings > span:nth-child(21) {
+    animation-delay: 4s;
+}
+
+.button button {
+  background: linear-gradient(90deg,#a33ceb, #be59ed, #1af5f9) !important;
+  color: white; /* Asegura que el texto sea visible */
+  border: none; /* Elimina cualquier borde */
+  padding: 10px 20px; /* Ajusta el relleno del botón */
+  border-radius: 8px; /* Bordes redondeados */
+  font-size: 1.2rem; /* Ajusta el tamaño de fuente */
+  cursor: pointer; /* Muestra un puntero en el hover */
+}
+
+.button button:hover {
+  opacity: 0.9; /* Efecto de hover para el botón */
+}
+
+
+.description {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: white;
+    align-items: center;
+
+}
+
+.des{
+  text-align: justify;
+}
+
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 574px) {
+    body {
+        height: auto; /* Cambiado para evitar problemas en móviles */
+        padding: 20px; /* Añadido padding para espacio */
+    }
+
+    .greetings {
+        font-size: 4rem;
+        font-weight: 800;
+        text-align: center;
+    }
+
+    .description {
+        font-size: 1.5rem; /* Ajustado para no ser demasiado grande */
+    }
+
+    .button a {
+        font-size: 1rem;
+        padding: 12px; /* Aumentado el padding para mejorar la accesibilidad */
+    }
+
+    .botones {
+        width: auto; /* Ancho automático para adaptarse al contenido */
+        margin: 0 auto; /* Centrar el botón */
+    }
+}
